@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A SpaceX-inspired interactive particle experience.">
+  <title>SpaceX — Beyond Earth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-mark">SPACEX</div>
+    <div class="loader-line"><span></span></div>
+    <div class="loader-status">INITIALIZING FLIGHT SYSTEM</div>
+  </div>
+
+  <canvas id="space"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="#" aria-label="SpaceX home">SPACEX</a>
+
+    <nav class="nav-links">
+      <a href="#missions">MISSIONS</a>
+      <a href="#technology">TECHNOLOGY</a>
+      <a href="#future">FUTURE</a>
+    </nav>
+
+    <a class="contact" href="#future">LET'S TALK <span>↗</span></a>
+
+    <button class="menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> HUMANITY'S MULTIPLANETARY FUTURE</p>
+        <h1><span>BEYOND</span><strong>EARTH</strong></h1>
+        <p class="intro">
+          Designing, building and flying the technologies that move humanity
+          closer to becoming a multiplanetary civilization.
+        </p>
+        <div class="hero-actions">
+          <a href="#missions" class="primary">EXPLORE MISSIONS <span>↓</span></a>
+          <button id="soundToggle" class="secondary">INTERACTION <span>ON</span></button>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <div><small>01</small><span>ORBIT</span></div>
+        <div><small>02</small><span>REUSABILITY</span></div>
+        <div><small>03</small><span>MARS</span></div>
+      </div>
+
+      <div class="scroll-note">MOVE YOUR CURSOR <span>●</span> EXPLORE THE FIELD</div>
+    </section>
+
+    <section id="missions" class="content-section">
+      <div class="section-number">01 / MISSIONS</div>
+      <div>
+        <p class="section-kicker">FROM EARTH TO ORBIT</p>
+        <h2>MAKING SPACE<br><em>ACCESSIBLE.</em></h2>
+        <p class="section-text">
+          Reusable launch systems are changing the economics of spaceflight.
+          Explore a visual interface built around motion, particles and
+          interaction.
+        </p>
+      </div>
+    </section>
+
+    <section id="technology" class="content-section reverse">
+      <div class="section-number">02 / TECHNOLOGY</div>
+      <div>
+        <p class="section-kicker">ENGINEERED FOR EXTREMES</p>
+        <h2>PRECISION<br><em>AT SCALE.</em></h2>
+        <p class="section-text">
+          From propulsion to autonomous flight, every layer is designed around
+          reliability, rapid iteration and reusable hardware.
+        </p>
+      </div>
+    </section>
+
+    <section id="future" class="future">
+      <div class="section-number">03 / THE FUTURE</div>
+      <p class="section-kicker">THE NEXT HORIZON</p>
+      <h2>KEEP<br><em>LOOKING UP.</em></h2>
+      <a class="primary" href="#top">RETURN TO ORBIT ↑</a>
+    </section>
+  </main>
+
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
